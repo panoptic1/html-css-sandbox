@@ -131,7 +131,11 @@ p {
     text-align: center;
 }
 
-#navbar ul li a:hover,
+#navbar ul li a:hover {
+    background: #f4f4f4;
+    color: cornflowerblue
+}
+
 #navbar ul li a.current {
     background: #444;
     color: #f7c08a;
