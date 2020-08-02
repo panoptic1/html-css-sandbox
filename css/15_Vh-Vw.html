@@ -17,8 +17,39 @@
         }
 
         header {
-            background: #333;
+            background: #333 url("https://source.unsplash.com/weekly?darkness") no-repeat center center/cover;
             color: white;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 15rem;
+            /* 100% will not work as a value as it only covers 100% of the content size (not the entire viewport) */
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin: 1rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #f4f4f4;
+            color: #333;
+            padding: 0.75rem 2rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        @media(max-height: 450px) {
+            header {
+                padding-top: 5rem;
+            }
         }
     </style>
 </head>
@@ -28,6 +59,15 @@
     </p>
     <a href="#" class="btn">Find Out More</a>
 </header>
+
+<section>
+    <h3>About Our Company</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat itaque, modi adipisci sunt corporis omnis
+        eveniet. At, voluptas, recusandae pariatur quas temporibus a inventore eveniet perspiciatis nihil aspernatur
+        molestiae harum laboriosam rerum. Maiores repellendus illum provident expedita cumque ab dolorum, veniam quasi
+        voluptatem nisi
+        blanditiis ex quas amet, eveniet perspiciatis.</p>
+</section>
 
 <body>
 
