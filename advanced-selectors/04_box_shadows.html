@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            padding: 1rem;
+            margin: 1rem;
+            background:blueviolet;
+            color: #fff;
+
+            /* offfset-x | offset-y | color */
+            box-shadow: 10px 10px gold;
+            /* offfset-x | offset-y | blur radius | color */
+            box-shadow: -10px -10px 20px gold;
+            /* offfset-x | offset-y | blur radius | spread radius | color */
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+
+            /*inset will reverse the values. But y tho?*/
+            /* multiple shadows with comma separated values*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero.</p>
+        </div>
+    </div>
+</body>
+</html>
